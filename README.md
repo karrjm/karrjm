@@ -1,4 +1,1 @@
-- 👋 Hi, I’m Jacob
-- 👀 I’m interested in making my own rouguelike
-- 🌱 I’m currently practicing C/C++ 
-- 📫 How to reach me: email me at karrjm@outlook.com
+Hello, I'm Jacob. You can contact me at karrjm@outlook.com.
