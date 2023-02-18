@@ -12,8 +12,31 @@
            60% { transform: rotate( 0.0deg) }
           100% { transform: rotate( 0.0deg) }
         }
+        @keyframes gradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
         .container {
-          background-color: black;
+          --color-main: #ef476f;
+          --color-primary: #ffd166;
+          --color-secondary: #06d6a0;
+          --color-tertiary: #118ab2;
+          background: linear-gradient(
+            -45deg,
+            var(--color-main),
+            var(--color-primary),
+            var(--color-secondary),
+            var(--color-tertiary)
+          );
+          background-size: 400% 400%;
+          animation: gradient 5s ease-in-out infinite;
           width: 100%;
           height: 300px;
           display: flex;
@@ -27,10 +50,18 @@
           display: inline-block;
           transform-origin: 70% 70%;
         }
+        @media (prefers-color-scheme: light) {
+          .container {
+            --color-main: #ffc8dd;
+            --color-primary: #ffafcc;
+            --color-secondary: #bde0fe;
+            --color-tertiary: #a2d2ff;
+          }
+        }
       </style>
 
       <div class="container">
-        <h1>Hi there, my name is Jacob. Hire Me! <div class="hi">👋</div></h1>
+        <h1>Hi there, my name is Jacob <div class="hi">👋</div></h1>
       </div>
     </div>
   </foreignObject>
