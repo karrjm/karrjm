@@ -12,6 +12,7 @@
            60% { transform: rotate( 0.0deg) }
           100% { transform: rotate( 0.0deg) }
         }
+
         @keyframes gradient {
           0% {
             background-position: 0% 50%;
@@ -23,11 +24,13 @@
             background-position: 0% 50%;
           }
         }
+
         .container {
           --color-main: #ef476f;
           --color-primary: #ffd166;
           --color-secondary: #06d6a0;
           --color-tertiary: #118ab2;
+
           background: linear-gradient(
             -45deg,
             var(--color-main),
@@ -37,19 +40,24 @@
           );
           background-size: 400% 400%;
           animation: gradient 5s ease-in-out infinite;
+
           width: 100%;
           height: 300px;
+
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
+
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         }
+
         .hi {
           animation: hi 1.5s linear -0.5s infinite;
           display: inline-block;
           transform-origin: 70% 70%;
         }
+
         @media (prefers-color-scheme: light) {
           .container {
             --color-main: #ffc8dd;
